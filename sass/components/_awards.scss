@@ -1,0 +1,51 @@
+.awards{
+    &__section{
+        padding: 5rem 0 6rem;
+        background-color: $color-dark-gray;
+        @include respond(medium-laptop){
+            padding: 3rem 0 4rem;
+        }
+    }
+    &__boxes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond(phone){
+            flex-direction: column;
+        }
+    }
+    &__logo{
+        height: 2.5rem;
+        width: auto;
+        @include respond(medium-laptop){
+            height: 2rem;
+        }
+    }
+    &__box{
+        flex: 1;
+        cursor: pointer;
+        transition: transform .5s ease-in-out;
+        &:hover{
+            transform: translateY(-1rem);
+        }
+    }
+    &__description{
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #fff9;
+        @include respond(medium-laptop){
+            font-size: 1.2rem;
+        }
+    }
+    &__divider{
+        height: 11rem;
+        width: 1px;
+        background-color: #fff3;
+        margin: 0 5%;
+        @include respond(phone){
+            margin: 0;
+            rotate: 90deg;
+            height: 7rem;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.feature-card{
+    background-color: $color-white;
+    border-radius: 1rem;
+    padding: 3rem;
+    min-height: 24rem;
+    z-index: 11;
+    border: 1px solid $color-border;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    @include respond(medium-laptop){
+        padding: 2rem;
+        min-height: 20rem;
+    }
+    &:hover .feature-card__link{
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+    &__icon{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+    }
+    &__head{
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $color-black;
+        font-weight: 700;
+        @include respond(medium-laptop){
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &__description{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: $color-lite-black;
+        @include respond(medium-laptop){
+            font-size: 1.4rem;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+    }
+    &__link{
+        color: $color-red;
+        font-size: 1.7rem;
+        text-decoration: none;
+        opacity: 0;
+        transform: translateY(2rem);
+        display: inline-block;
+        transition: transform .4s ease-in-out;
+        @include respond(medium-laptop){
+            transform: translateY(1rem);
+            opacity: 1;
+            font-size: 1.5rem;
+        }
+    }
+}

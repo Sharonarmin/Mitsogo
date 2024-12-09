@@ -1,0 +1,187 @@
+.hero{
+    min-height: calc(100vh - 7rem);
+    background-color: $color-black;
+    display: flex;
+    align-items: center;
+    margin-top: 7rem;
+    @include respond(tab-land){
+        min-height: auto;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        height: 100%;
+        @include respond(medium-laptop){
+            grid-template-columns: 1fr;
+        }
+    }
+    &__left{
+        order: 1;
+        padding-right: 7%;
+        @include respond(medium-laptop){
+            padding: 3rem 0;
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-1{
+            @include respond(medium-laptop){
+                text-align: center;
+                padding: 0 25%;
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+            @include respond(tab-land){
+                font-size: 2.6rem;
+                line-height: 3rem;
+                padding: 0 20%;
+            }
+            @include respond(phone){
+                padding: 0 10%;
+            }
+        }
+        .description{
+            @include respond(medium-laptop){
+                text-align: center;
+                padding: 0 25%;
+                font-size: 1.6rem;
+            }
+            @include respond(tab-land){
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+            @include respond(phone){
+                padding: 0 10%;
+            }
+        }
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        &--input{
+            width: 45%;
+            border-style: none;
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+            padding: 1.2rem 1rem;
+            border-radius: .4rem;
+            border-style: none;
+            outline: none;
+            color: $color-lite-gray;
+            font-family: $primary-font;
+        }
+    }
+    &__right{
+        order: 2;
+        @include respond(medium-laptop){
+            display: flex;
+            justify-content: center;
+            order: 1;
+        }
+    }
+    &__relative{
+        position: relative;
+        padding-top: 3rem;
+    }
+    &__img{
+        @include respond(phone){
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__img-absolute{
+        position: absolute;
+        left: 0;
+        z-index: 111;
+        @include respond(phone){
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__point{
+        display: flex;
+        align-items: center;
+        padding: .6rem 2rem .6rem .4rem;
+        overflow: hidden;
+        @include respond(tab-land){
+            padding: .4rem 1rem .4rem .3rem;
+        }
+    }
+    &__point--round{
+        width: 3.3rem;
+        height: 3.3rem;
+        border-radius: 50%;
+        background-color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: .6rem;
+        @include respond(tab-land){
+            width: 2.3rem;
+            height: 2.3rem;
+        }
+    }
+    &__point-1{
+        position: absolute;
+        background-color: #fcd598;
+        color: $color-white;
+        white-space: nowrap;
+        left: 8%;
+        top: 20%;
+        font-size: 2rem;
+        color: $color-black;
+        border-radius: 3rem;
+        overflow: hidden;
+        @include respond(tab-land){
+            font-size: 1.3rem;
+        }
+        &--icon{
+            width: 1.3rem;
+            height: 1.3rem;
+            stroke: #fcd598;
+        }
+    }
+    &__point-2{
+        position: absolute;
+        background-color: #c3e1e7;
+        color: $color-white;
+        white-space: nowrap;
+        right: -6%;
+        top: 45%;
+        font-size: 2rem;
+        color: $color-black;
+        border-radius: 3rem;
+        @include respond(tab-land){
+            font-size: 1.3rem;
+        }
+        &--icon{
+            width: 1.3rem;
+            height: 1.3rem;
+            stroke: #c3e1e7;
+        }
+    }
+    &__point-3{
+        position: absolute;
+        background-color: #bcdcbe;
+        color: $color-white;
+        white-space: nowrap;
+        right: 28%;
+        top: 76%;
+        z-index: 112;
+        font-size: 2rem;
+        color: $color-black;
+        border-radius: 3rem;
+        overflow: hidden;
+        @include respond(tab-land){
+            font-size: 1.3rem;
+        }
+        &--icon{
+            width: 1.3rem;
+            height: 1.3rem;
+            stroke: #bcdcbe;
+        }
+    }
+}

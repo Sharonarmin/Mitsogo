@@ -1,0 +1,22 @@
+.feature-2-card{
+    &__head{
+        font-size: 3.2rem;
+        line-height: 4rem;
+        color: $color-black;
+        font-weight: 600;
+        @include respond(medium-laptop){
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+    &__description{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: $color-lite-black;
+        @include respond(medium-laptop){
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-weight: 400;
+        }
+    }
+}

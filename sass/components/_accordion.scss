@@ -1,0 +1,93 @@
+.accordion{
+    &__section{
+        padding-left: 2rem;
+    }
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include respond(phone){
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item{
+        border-bottom: 1px solid $color-border;
+        padding:  1rem 1.4rem;
+        &.active{
+            background-color: $color-white;
+            border-radius: 1rem;
+            border: 1px solid $color-border;
+            transform: scale(1.03);
+        }
+        &.active .accordion__content {
+            max-height: 300px;
+        }
+    }
+    &__header{
+        cursor: pointer;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        color: #050607;
+        transition: all 1s ease;
+        padding: .7rem 0;
+        @include respond(medium-laptop){
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 3rem;
+        }
+        @include respond(tab-land){
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2rem;
+        }
+    }
+    &__content{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $color-lite-black;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+        @include respond(medium-laptop){
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+    &__link{
+        color: $color-red;
+        font-size: 1.7rem;
+        text-decoration: none;
+        display: block;
+        margin: 1rem 0;
+    }
+    &__img-section{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        @include respond(phone){
+            height: 30rem;
+        }
+    }
+    &__image{
+        height: 100%;
+        border-radius: 8px;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease;
+        left: 50%;
+        transform: translateX(-50%);
+        mix-blend-mode: multiply;
+        &.from-bottom {
+            bottom: -100%;
+            animation: fromBottom 0.5s ease forwards;
+        }
+        &.from-top {
+            top: -100%;
+            animation: fromTop 0.5s ease forwards;
+        }
+    }
+}
+
+

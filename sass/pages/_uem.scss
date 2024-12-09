@@ -1,0 +1,151 @@
+.feature{
+    &__section{
+        padding: 6rem 0;
+        background-color: $color-bg-gray;
+    
+    }
+    &__container{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(10 , 1fr);
+        gap: 3rem;
+        @include respond(medium-laptop){
+            gap: 1rem;
+        }
+        
+    }
+}
+.center-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include respond(medium-laptop){
+        display: none;
+    }
+}
+.center-icon img{
+    width: 10.5rem;
+    height: 10.5rem;
+    z-index: 11;
+}
+
+.center__dash-icon {
+    position: absolute;
+    animation: dash-animation .2s linear infinite;
+    &.top-left{
+        top: -120px;
+        right: -36px;
+
+    }
+    &.top-right{
+        top: -166px;
+        left: 5px;
+        rotate: -90deg;
+        animation: dash-animation1 .2s linear infinite;
+    }
+    &.bottom-left{
+        bottom: -130px;
+        right: -36px;
+    }
+    &.bottom-right{
+        bottom: -166px;
+        left: -5px;
+        rotate: 90deg;
+        animation: dash-animation1 .2s linear infinite;
+    }
+}
+
+
+.feature__container .feature-card:nth-child(1) {
+    grid-column: 1 / 5;
+    grid-row: 1;
+    align-self: start;
+    @include respond(medium-laptop){
+        grid-column: 1 / 6;
+    }
+    @include respond(phone){
+        grid-column: 1 / 11;
+    }
+}
+
+
+.feature__container  .feature-card:nth-child(2) {
+    grid-column: 7 /11;
+    grid-row: 1;
+    align-self: start;
+    @include respond(medium-laptop){
+        grid-column: 6 / 11;
+    }
+    @include respond(phone){
+        grid-column: 1 / 11;
+        grid-row: 2;
+    }
+}
+
+
+.feature__container  .feature-card:nth-child(4) {
+    grid-column: 1 / 5 ;
+    grid-row: 3;
+    align-self: end;
+    @include respond(medium-laptop){
+        grid-column: 1 / 6;
+    }
+    @include respond(phone){
+        grid-column: 1 / 11;
+        grid-row: 3;
+    }
+}
+
+
+.feature__container  .feature-card:nth-child(5) {
+    grid-column: 7 / 11;
+    grid-row: 3;
+    align-self: end;
+    @include respond(medium-laptop){
+        grid-column: 6 / 11;
+    }
+    @include respond(phone){
+        grid-column: 1 / 11;
+        grid-row: 4;
+    }
+}
+
+// feature 2
+.feature-2{
+    &__section{
+    padding: 6rem 0;
+    &__head{
+        padding: 0 10%;
+    }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 6rem;
+        @include respond(medium-laptop){
+            gap: 2rem;
+
+        }
+        @include respond(medium-laptop){
+            grid-template-columns: repeat(2 , 1fr);
+        }
+    }
+}
+
+// feature 3
+.feature-3{
+    &__section{
+        padding: 6rem 0;
+        background-color: $color-bg-gray;
+    }
+}
+
+
+// testimonial section
+.testimonial__section{
+    padding: 6rem 0;
+}

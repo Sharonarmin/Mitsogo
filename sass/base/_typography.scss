@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('../../fonts/Mulish-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src:url('../../fonts/Mulish-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+// header 1
+.header-1{
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    color: $color-white;
+}
+// header 2
+.header-2{
+    font-size: 4rem;
+    line-height: 4rem;
+    color: $color-black;
+    font-weight: 600;
+    @include respond(medium-laptop){
+        font-size: 3.2rem;
+    }
+    @include respond(phone){
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+    }
+}
+// header 3
+.header-3{
+    font-size: 4rem;
+    color: $color-white;
+    font-weight: 600;
+    @include respond(medium-laptop){
+        font-size: 3.4rem;
+    }
+    @include respond(phone){
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+// header 5
+.header-5{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: 400;
+    color: $color-lite-black;
+    @include respond(medium-laptop){
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+// header 6
+.header-6{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: $color-lite-gray;
+}
+// description
+.description{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}

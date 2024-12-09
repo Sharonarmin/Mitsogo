@@ -1,0 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/primary-btn";
+@import "components/hero";
+@import "components/awards";
+@import "components/feature-card";
+@import "components/feature-2-card";
+@import "components/accordion";
+@import "components/testimonial-slider";
+@import "components/cta";
+
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
+
+
+@import "pages/uem";

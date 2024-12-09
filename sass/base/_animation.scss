@@ -1,0 +1,37 @@
+// dash svg animation
+@keyframes dash-animation {
+  to {
+      stroke-dashoffset: -14;
+  }
+}
+
+@keyframes dash-animation1 {
+  to {
+      stroke-dashoffset: +14;
+  }
+}
+
+// accordion animation
+@keyframes fromBottom {
+  from {
+      bottom: -100%;
+      opacity: 0;
+  }
+
+  to {
+      bottom: 0;
+      opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+      top: -100%;
+      opacity: 0;
+  }
+
+  to {
+      top: 0;
+      opacity: 1;
+  }
+}
